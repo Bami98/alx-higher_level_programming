@@ -7,6 +7,6 @@ def uniq_add(my_list=[]):
     argument -- list
     Return: sum of the list
     """
-    uniq_list = list(set(my_list))
+    uniq_list = [*{el for el in my_list}]
     sum = reduce((lambda x, y: x + y), uniq_list)
     return sum
